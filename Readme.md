@@ -53,7 +53,7 @@ topografía y características correspondientes de la red es la siguiente:
 ## Configuracion de Areas de trabajo
 
 ### Configuracion de Switch 1
-```diff
+``` diff
       ! configure terminal
         interface range fa
         switchport trunk encapsultation dot1q
