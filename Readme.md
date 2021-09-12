@@ -54,7 +54,7 @@ topografía y características correspondientes de la red es la siguiente:
 
 ### Configuracion de Switch 1
 ```diff
-        configure terminal
+      ! configure terminal
         interface range fa
         switchport trunk encapsultation dot1q
         switchpot mode trunk
