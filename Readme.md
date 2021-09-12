@@ -310,9 +310,8 @@ Guardar la configuracion
     copy running-config startup-config
 ```
 
-### Configuracion de Switch cliente 4
-////// 1/0 es el modo acces para la vpc vlan 28
-```txt
+### Configuracion de Switch clie
+```bat
         configure terminal
         interface range fa1/10 - 12 
         switchport trunk encapsultation dot1q
