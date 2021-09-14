@@ -55,7 +55,7 @@ topografía y características correspondientes de la red es la siguiente:
 ### Configuracion de Switch 1
 ``` diff
         configure terminal
-        interface range fa
+        interface range fa1/14 -15
         switchport trunk encapsultation dot1q
         switchpot mode trunk
         shutdown
@@ -77,7 +77,7 @@ Guardar la configuracion
 ### Configuracion de Switch 2
 ```txt
         configure terminal
-        interface range fa
+        interface range fa1/13 - 15
         switchport trunk encapsultation dot1q
         switchpot mode trunk
         shutdown
@@ -99,7 +99,7 @@ Guardar la configuracion
 ### Configuracion de Switch 3
 ```txt
         configure terminal
-        interface range fa
+        interface range fa1/13 -14
         switchport trunk encapsultation dot1q
         switchpot mode trunk
         shutdown
@@ -148,21 +148,21 @@ Guardar configuracion
 ## Asignacion de VLAN SW 2
 ```txt
     configure terminal
-    interfaces fa1/
+    interfaces fa1/0
     switchport mode access
     switchport access vlan 18
     exit
     exit
 
     configure terminal
-    interfaces fa1/
+    interfaces fa1/1
     switchport mode access
     switchport access vlan 38
     exit
     exit
 
     configure terminal
-    interfaces fa1/
+    interfaces fa1/2
     switchport mode access
     switchport access vlan 48
     exit
@@ -176,21 +176,21 @@ Guardar la configuracion
 ## Asignacion de VLAN SW 3
 ```txt
     configure terminal
-    interfaces fa1/
+    interfaces fa1/2
     switchport mode access
     switchport access vlan 38
     exit
     exit
     
     configure terminal
-    interfaces fa1/
+    interfaces fa1/1
     switchport mode access
     switchport access vlan 48
     exit
     exit
 
     configure terminal
-    interfaces fa1/
+    interfaces fa1/3
     switchport mode access
     switchport access vlan 28
     exit
