@@ -182,7 +182,7 @@ Guardar configuracion
     configure terminal
     interfaces fa1/2
     switchport mode access
-    switchport access vlan 48
+    switchport access vlan 18
     exit
     exit
 ```
@@ -194,16 +194,16 @@ Guardar la configuracion
 ## Asignacion de VLAN SW 3
 ```txt
     configure terminal
-    interfaces fa1/2
-    switchport mode access
-    switchport access vlan 38
-    exit
-    exit
-    
-    configure terminal
     interfaces fa1/1
     switchport mode access
     switchport access vlan 48
+    exit
+    exit
+
+    configure terminal
+    interfaces fa1/2
+    switchport mode access
+    switchport access vlan 38
     exit
     exit
 
@@ -218,9 +218,6 @@ Guardar la configuracion
 ```txt
     copy running-config startup-config
 ```
-
-
-
 
 
 # Topología 2: Backbone
