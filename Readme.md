@@ -55,6 +55,15 @@ topografía y características correspondientes de la red es la siguiente:
 ### Configuracion de Switch 1
 ``` diff
         configure terminal
+        interface fastEthernet fa1/0
+        switchport trunk encapsultation dot1q
+        switchpot mode trunk
+        shutdown
+        no shutdown
+        exit
+        exit
+
+        configure terminal
         interface range fa1/14 -15
         switchport trunk encapsultation dot1q
         switchpot mode trunk
@@ -77,7 +86,16 @@ Guardar la configuracion
 ### Configuracion de Switch 2
 ```txt
         configure terminal
-        interface range fa1/13 - 15
+        interface fastEthernet fa1/13
+        switchport trunk encapsultation dot1q
+        switchpot mode trunk
+        shutdown
+        no shutdown
+        exit
+        exit
+
+        configure terminal
+        interface fastEthernet fa1/15
         switchport trunk encapsultation dot1q
         switchpot mode trunk
         shutdown
